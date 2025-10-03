@@ -18,6 +18,12 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: '2025-07-15',
+  nitro: {
+    preset: 'vercel',
+    output: {
+      dir: '../../.vercel/output',
+    },
+  },
   eslint: {
     config: {
       stylistic: true,
