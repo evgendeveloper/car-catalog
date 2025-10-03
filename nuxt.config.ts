@@ -17,13 +17,10 @@ export default defineNuxtConfig({
       unsplashAccessKey: process.env.UNSPLASH_ACCESS_KEY,
     },
   },
-  compatibilityDate: '2025-07-15',
-  nitro: {
-    preset: 'vercel',
-    output: {
-      dir: '../../.vercel/output',
-    },
+  build: {
+    transpile: ['vue'],
   },
+  compatibilityDate: '2025-07-15',
   eslint: {
     config: {
       stylistic: true,
